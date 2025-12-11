@@ -5,7 +5,7 @@
 
 Book::Book(const std::string& title, const std::string& author, int year, const std::string& isbn): title(title), author(author), year(year), isbn(isbn), 
       isAvailable(true), borrowedBy(""){
-        if (1450 < year || year > 2025){
+        if (year < 1450 || year > 2025){
             throw std::invalid_argument("Некорректный год.");
         }
         if (isbn.empty()){
