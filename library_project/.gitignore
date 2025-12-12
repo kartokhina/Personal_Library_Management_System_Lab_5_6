@@ -1,0 +1,12 @@
+
+build/
+
+*.o
+*.a
+
+library
+*.exe
+
+.DS_Store
+
+.vscode/

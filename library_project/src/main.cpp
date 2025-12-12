@@ -6,6 +6,7 @@
 
 #include "Library.h"
 #include <iostream>
+#include <limits>  
 
 
 
@@ -54,8 +55,14 @@ int main() {
 
             int c;
             std::cin >> c;
+          
+            if (std::cin.fail()) {
+                std::cin.clear(); 
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+                std::cout << "Ошибка ввода! Пожалуйста, введите число от " << 1 << " до " << 10 << ": ";
+            continue;
+            }
             std::cin.ignore();
-
             switch (c) {
                  case 1:
                     library.displayAllBooks();

@@ -15,7 +15,7 @@ class Library {
         std::string dataFile;
 
     public:
-        Library(const std::string& dataFilePath = "data/library_data.txt");
+        Library(const std::string& dataFilePath = "..\\data\\library_data.txt");
 
         void addBook(const Book& book);
         void addUser(const User& user);

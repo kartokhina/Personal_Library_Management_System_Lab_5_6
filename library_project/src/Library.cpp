@@ -128,6 +128,11 @@ void Library::loadFromFile(){
     std::ifstream file(dataFile);
     if (!file.is_open()) {
         std::cout << "Файл данных не найден.\n";
+
+        std::ofstream createFile(dataFile);
+        if (createFile.is_open()) {
+            std::cout << "Файл успешно создан: " << dataFile << std::endl;
+            createFile.close();}
         return;
     }
 
