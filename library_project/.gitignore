@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 build/
 
@@ -10,3 +11,17 @@ library
 .DS_Store
 
 .vscode/
+=======
+
+build/
+
+*.o
+*.a
+
+library
+*.exe
+
+.DS_Store
+
+.vscode/
+>>>>>>> 8826c6b4c8089d55566704f1e82d1408834cbbe7
